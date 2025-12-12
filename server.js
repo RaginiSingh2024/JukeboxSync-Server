@@ -19,7 +19,7 @@ const io = new Server(server, {
     cors: {
         origin: [
             'http://localhost:3000',
-            'https://jukebox-sync-client.vercel.app/'
+            'https://jukebox-sync-client.vercel.app'
         ],
         methods: ['GET', 'POST'],
         credentials: true
@@ -30,7 +30,7 @@ const io = new Server(server, {
 app.use(cors({
     origin: [
         'http://localhost:3000',
-        'https://jukebox-sync-client.vercel.app/'
+        'https://jukebox-sync-client.vercel.app'
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
